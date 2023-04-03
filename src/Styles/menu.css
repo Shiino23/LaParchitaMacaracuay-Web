@@ -43,6 +43,7 @@ body{
     justify-content: center;
     color: #D94D58;
     font-size: 200px;
+    text-shadow: -8px 0 #FFD85A, 0 8px #FFD85A, 8px 0 #FFD85A, 0 -8px #FFD85A;
 
 }
 
@@ -57,9 +58,10 @@ body{
     width: 100%;
     justify-content: center;
 }
+
 a{
     text-decoration: none;
-    pointer-events: painted;
+    pointer-events:painted;
 }
 
 
