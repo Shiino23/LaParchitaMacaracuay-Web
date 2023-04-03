@@ -59,7 +59,9 @@ body{
 }
 a{
     text-decoration: none;
+    pointer-events: painted;
 }
+
 
 .carousel{
     position: relative;
@@ -85,10 +87,12 @@ a{
 }
 
 
+
 .carousel-item:nth-child(1){
 
     animation-delay: calc(2s * -1);
 }
+
 
 .carousel-item:nth-child(2){
     animation-delay: calc(2s * 0);
@@ -114,6 +118,7 @@ a{
     
 
 }
+
 
 .title{
     background-color: #D94D58;
@@ -157,3 +162,5 @@ a{
     }
     
 }
+
+
