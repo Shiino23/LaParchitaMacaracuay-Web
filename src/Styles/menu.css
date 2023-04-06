@@ -16,7 +16,7 @@
 *, *::after, *::before{
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    box-sizing: border-box;    
 
 }
 
@@ -40,24 +40,32 @@
     animation: spining 0.5 linear infinite;
 }
 
+
+/* Animaciones: spining */
+@keyframes spining{
+    from{ transform: rotate(0deg);}
+    to{ transform: rotate(360deg);}
+}
+
 html{
     scroll-behavior: smooth;
 }
 
-
-
 body{
-    background-image: url(../img/LAPARCHITA_LANDING_BG_-01.jpg);
-    background-attachment: fixed;
+    background-image: url(../img/LAPARCHITA_BG_01.jpg);
+    background-attachment: scroll;
     background-repeat: no-repeat;
     background-size: cover;
-    z-index: -1;
+    height: 100%;
+    width: 100%;
+
 }
+
+
 
 .container{
     font-family: 'Gulfs Display Condensed';
     display: block;
-    margin: auto 0;
     justify-content: center;
 }
 
@@ -74,8 +82,8 @@ body{
     width: 100%;
     justify-content: center;
     color: #D94D58;
-    font-size: 200px;
-    text-shadow: -8px 0 #FFD85A, 0 8px #FFD85A, 8px 0 #FFD85A, 0 -8px #FFD85A;
+    font-size: 300px;
+    text-shadow: -15px 0 #FFD85A, 0 15px #FFD85A, 15px 0 #FFD85A, 0 -15px #FFD85A;
 
 }
 
@@ -93,7 +101,7 @@ body{
 
 a{
     text-decoration: none;
-    pointer-events:painted;    
+    pointer-events:painted;   
 }
 
 
@@ -153,90 +161,6 @@ a{
 
 }
 
-
-.title{
-    background-color: #D94D58;
-    border-radius: 8px;
-    font-size: 200px;
-    color: #FFD85A;
-    padding: 0 10px;
-}
-
-
-.que-container{
-    display: block;
-    height: 900px;
-    width: 100%;
-    margin-top: 200px ;
-
-}
-
-
-
-.que-tittle{
-    font-family: 'Gulfs Display Condensed';
-    display: block;
-    position: relative;
-    font-family: 'Gulfs Display Condensed';
-    font-size: 200px;
-    color: #D94D58;
-    padding: 0 200px;
-
-
-}
-
-.text{
-    font-family: 'Boismend Bold' ;
-    box-sizing: border-box;
-    position: flex ;
-    font-family: 'Boismend Bold';
-    text-transform: uppercase;
-    font-size: 35px;
-    width: 100%;
-    color: #844395;
-    padding:  20px 400px;
-    justify-content: center;
-
-}
-
-b{
-    font-size: larger;
-    font-weight: 600;
-
-}
-
-p>b:first-child{
-    color: #D94D58;
-}
-
-.parchita-container{
-    display: block;
-    height: 900px;
-    width: 100%;
-    margin-top: 200px ;
-
-}
-
-.parchita-tittle{
-    font-family: 'Gulfs Display Condensed';
-    display: block;
-    position: relative;
-    font-family: 'Gulfs Display Condensed';
-    font-size: 200px;
-    color: #844395;
-    padding: 20px 0px 0 700px;
-}
-
-#Q1, #P1{
-    transition: 1s;
-}
-
-/* Animaciones: spining */
-@keyframes spining{
-    from{ transform: rotate(0deg);}
-    to{ transform: rotate(360deg);}
-}
-
 /* Animaciones: CarouselAnim */
 
 @keyframes carouselAnim{
@@ -272,5 +196,98 @@ p>b:first-child{
     }
     
 }
+
+
+.title{
+    background-color: #D94D58;
+    font-size: 200px;
+    color: #FFD85A;
+    padding: 0 10px;
+}
+
+
+.que-container{
+    display: block;
+    height: 100vh;
+    width: 100%;
+    margin: 25rem auto;
+
+}
+
+
+.que-tittle{
+    font-family: 'Gulfs Display Condensed';
+    display: block;
+    position: relative;
+    font-size: 200px;
+    color: #D94D58;
+    padding: 0 200px 0px 200px;
+    margin-top: 15rem;
+
+}
+
+.text{
+    font-family: 'Boismend Bold' ;
+    box-sizing: border-box;
+    position: flex ;
+    font-family: 'Boismend Bold';
+    text-transform: uppercase;
+    font-size: 35px;
+    width: 100%;
+    color: #844395;
+    padding:  0px 600px;
+    justify-content: center;
+
+}
+
+b{
+    font-size: larger;
+    font-weight: 600;
+
+}
+
+p>b:first-child{
+    color: #D94D58;
+}
+
+
+.parchita-container{
+    display: block;
+    height: 900px;
+    width: 100%;
+    margin: 65rem auto 55rem;
+
+}
+
+.parchita-tittle{
+    font-family: 'Gulfs Display Condensed';
+    display: block;
+    position: relative;
+    font-family: 'Gulfs Display Condensed';
+    font-size: 200px;
+    color: #FFD85A;
+    padding: 200px 0px 0 700px;
+    margin-bottom: 40px ;
+}
+
+.text-parchita{
+    font-family: 'Boismend Bold' ;
+    box-sizing: border-box;
+    position: flex ;
+    font-family: 'Boismend Bold';
+    text-transform: uppercase;
+    font-size: 35px;
+    width: 100%;
+    color: #FFD85A;
+    padding:  20px 400px;
+    justify-content: center;
+}
+
+#Q1, #P1{
+    transition: 1s;
+}
+
+
+
 
 

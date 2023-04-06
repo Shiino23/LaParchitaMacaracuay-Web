@@ -14,7 +14,7 @@
 
 body{
     background-image: url(../img/LAPARCHITA_HOME_BG_01.jpg);
-    background-attachment: fixed;
+    background-attachment: scroll;
     background-repeat: no-repeat;
     background-size: cover;
     
@@ -49,8 +49,8 @@ body{
 
 .img-btn{
     position: relative;
-    width: 200px;
-    height: 200px; 
+    width: 150px;
+    height: 150px; 
     margin: 1em 0 0 25em;
     filter: drop-shadow(0 2px 2px #D94D58);
     animation: buttonResizing 0.5s ease infinite;
