@@ -9,8 +9,8 @@
 @font-face {
     font-family: 'Boismend Bold' ;
     src: url(../Font/Boismen\ Bold.ttf);
-    font-weight: 1000;
-    font-size: smaller;
+    font-weight: bolder;
+    font-size: medium;
 }
 
 *, *::after, *::before{
@@ -210,7 +210,7 @@ a{
     display: block;
     height: 100vh;
     width: 100%;
-    margin: 25rem auto;
+    margin: 27rem auto;
 
 }
 
@@ -219,9 +219,9 @@ a{
     font-family: 'Gulfs Display Condensed';
     display: block;
     position: relative;
-    font-size: 200px;
+    font-size: 275px;
     color: #D94D58;
-    padding: 0 200px 0px 200px;
+    padding: 0 300px 0px 200px;
     margin-top: 15rem;
 
 }
@@ -232,7 +232,7 @@ a{
     position: flex ;
     font-family: 'Boismend Bold';
     text-transform: uppercase;
-    font-size: 35px;
+    font-size: 40px;
     width: 100%;
     color: #844395;
     padding:  0px 600px;
@@ -264,9 +264,9 @@ p>b:first-child{
     display: block;
     position: relative;
     font-family: 'Gulfs Display Condensed';
-    font-size: 200px;
+    font-size: 250px;
     color: #FFD85A;
-    padding: 200px 0px 0 700px;
+    padding: 200px 0px 0 500px;
     margin-bottom: 40px ;
 }
 
@@ -276,7 +276,7 @@ p>b:first-child{
     position: flex ;
     font-family: 'Boismend Bold';
     text-transform: uppercase;
-    font-size: 35px;
+    font-size: 40px;
     width: 100%;
     color: #FFD85A;
     padding:  20px 400px;

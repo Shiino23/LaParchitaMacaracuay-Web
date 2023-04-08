@@ -1,0 +1,38 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    background-color:#489bc5 ;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+i{
+    position: absolute;
+    background: #D94D58;
+    border-top-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+    width: 100px;
+    height: 20px;
+    top: -10px;
+    animation: rainLeaf linear infinite;
+}
+
+@keyframes rainLeaf{
+    0${
+        top: -10%;
+    }
+
+    100%{
+        top: calc(100vh + 50px);
+    }
+}
