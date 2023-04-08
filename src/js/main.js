@@ -6,10 +6,10 @@ const rainingLeafs = () =>{
     let leaf = document.createElement('i');
     let leaf2 = document.createElement('j')
     let x = innerWidth * Math.random();
-    let height = (Math.random() * 12) + 60;
-    let width = (Math.random() * 14) + 60;
+    let height = (Math.random() * 12) + 80;
+    let width = (Math.random() * 14) + 80;
     let z = Math.round(Math.random)* 0.1;
-    let delay = Math.random() * 5;
+    let delay = Math.random() * 2;
     let anima = (Math.random() * 10) + 5;
     let deg = Math.round(Math.random)*2;
 
@@ -33,4 +33,4 @@ const rainingLeafs = () =>{
 
 };
 
-setInterval(rainingLeafs, 1000);
+setInterval(rainingLeafs, 500);

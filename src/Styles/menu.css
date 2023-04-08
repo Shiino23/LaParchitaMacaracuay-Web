@@ -287,6 +287,44 @@ p>b:first-child{
     transition: 1s;
 }
 
+/* Mobile Responsive */
+
+body{
+    background-image: url(../img/LAPARCHITA_BG_01.jpg);
+    background-attachment: scroll;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+
+}
+
+@media only screen and (max-width: 600px){
+
+    *{
+        border: 1px solid red;
+    }
+
+
+    .que-container{
+        display: block;
+        height: 100vh;
+        width: 100vw;
+          
+    }
+
+    .que-tittle{
+        font-family: 'Gulfs Display Condensed';
+        display: block;
+        position: relative;
+        font-size: 175px;
+        color: #D94D58;
+        padding: 0 300px 0px 200px;
+        margin-top: 15rem;
+    
+    }
+    
+}
 
 
 
