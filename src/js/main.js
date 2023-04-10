@@ -1,6 +1,6 @@
 const body = document.querySelector('body')
 
-const mediaqueryList = window.matchMedia("(min-width: 920px)");
+const mql = window.matchMedia("(min-width: 920px)");
 
 
 const rainingLeafs = () =>{
@@ -34,6 +34,23 @@ const rainingLeafs = () =>{
 };
 
 
-if (mediaqueryList.matches){
-    setInterval(rainingLeafs, 500);
-}
+addEventListener('resize', function(){ 
+    console.log(window.innerWidth);
+    if(this.window.innerWidth >= 920){
+        setInterval(rainingLeafs, 1000);
+    };
+});
+
+addEventListener('DOMContentLoaded', function(){ 
+    console.log(window.innerWidth);
+    if(this.window.innerWidth >= 920){
+        setInterval(rainingLeafs, 1000);
+    };
+});
+ 
+
+
+
+
+
+ 
