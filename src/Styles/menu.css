@@ -72,15 +72,12 @@ body{
 .menu-box{
 
     display: inline-block;
-    margin: 150px 50px 150px 500px;
+    margin: 150px 50px 150px 450px;
     padding: 100px 0;
 }
 
 .LA-text{
     display: flex;
-    height: 100%;
-    width: 100%;
-    justify-content: center;
     color: #D94D58;
     font-size: 300px;
     text-shadow: -15px 0 #FFD85A, 0 15px #FFD85A, 15px 0 #FFD85A, 0 -15px #FFD85A;
@@ -285,6 +282,48 @@ p>b:first-child{
 
 #Q1, #P1{
     transition: 1s;
+}
+
+/* Weird Media */
+
+@media (max-width: 1600px) and (min-width: 920px){
+    .menu-box{
+
+        display: inline-block;
+        margin: 150px 50px 150px 300px;
+        padding: 100px 0;
+    }
+
+    .que-container{
+        display: block;
+        height: 100vh;
+        width: 100%;
+        margin: 18rem auto;
+    
+    }
+
+    .text{
+        font-family: 'Boismend Bold' ;
+        box-sizing: border-box;
+        position: flex ;
+        font-family: 'Boismend Bold';
+        text-transform: uppercase;
+        font-size: 40px;
+        width: 100%;
+        color: #844395;
+        padding:  0px 400px;
+        justify-content: center;
+    
+    }
+
+    .parchita-container{
+        display: block;
+        height: 900px;
+        width: 100%;
+        margin: 35rem auto 55rem;
+    
+    }
+
 }
 
 /* Mobile Responsive */
