@@ -114,10 +114,6 @@ a{
 
 @media (max-width: 600px){
 
-    *{
-        border: 1px solid red;
-    }
-
 
     .logo-content{
         width: 100vw;
