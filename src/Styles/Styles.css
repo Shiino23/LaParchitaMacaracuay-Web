@@ -18,10 +18,8 @@ body{
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
-    position: relative;
     min-height: 100vh;
-    justify-content: center;
-    align-items: center;
+    min-width: 100vw;
     overflow: hidden;
 }
 
@@ -75,16 +73,10 @@ i{
 
 .img-btn{
     background-image: url(../img/Logos/logo-export-RGB-transparente-2.png);
-    background-repeat: no-repeat;
-    background-position: cover;
     background-attachment: fixed;
     background-size: cover;
-    position: relative;
-    align-items: center;
-    justify-content: center;
     width: 150px;
     height: 150px; 
-    margin: 1em 0 0 25em;
     filter: drop-shadow(0 2px 2px #D94D58);
     animation: buttonResizing 0.5s ease infinite;
     transition: 1s;
@@ -96,12 +88,18 @@ i{
     background-repeat: no-repeat;
     background-position: cover;
     background-attachment: fixed;
-    background-size: cover;
+    background-size: contain;
     
 }
 
-a{
+a{  
+    display:flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
     text-decoration: none;
+    margin: 0 420px;
+
 }
 
 
@@ -114,4 +112,91 @@ a{
 
 /* RESPONSIVE MOBILE */
 
+@media (max-width: 600px){
+
+    *{
+        border: 1px solid red;
+    }
+
+
+    .logo-content{
+        width: 100vw;
+        min-height: 90vh;
+    }
+
+    .logo-container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 150px auto;
+        z-index: 100;
+        
+    }
+
+    .logo-text{
+        width: 350px;
+        margin: auto;
+
+    }
+
+    a{  
+        display:flex;
+        position: relative;
+        align-items: center;
+        justify-content: center;
+        text-decoration: none;
+        margin: 0 auto;
+    
+    }
+
+    .img-btn{
+        height: 115px;
+        width: 115px;
+        margin: 20px 0;
+
+    }
+
+
+}
+
+
+
+
+/* RESPONSIVE TABLET */
+
+@media (max-width: 920px) and (min-width: 600px){
+
+
+    .logo-content{
+        width: 100vw;
+        min-height: 90vh;
+    }
+
+
+    .logo-text{
+        width: 750px;
+        margin: auto;
+
+
+    }
+
+    a{  
+        display:block;
+        position: relative;
+        align-items: center;
+        justify-content: center;
+        text-decoration: none;
+        margin: 0 auto;
+    
+    }
+
+    .img-btn{
+        height: 175px;
+        width: 175px;
+        margin: 50px auto;
+
+    }
+
+
+}
 
