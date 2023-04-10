@@ -289,20 +289,30 @@ p>b:first-child{
 
 /* Mobile Responsive */
 
-body{
-    background-image: url(../img/LAPARCHITA_BG_01.jpg);
-    background-attachment: scroll;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 100%;
-    width: 100%;
-
-}
 
 @media (max-width: 600px){
 
     *{
         border: 1px solid red;
+    }
+
+    #loader{
+        height: 100px;
+        width: 100px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        margin: auto;
+        animation: spining 0.5 linear infinite;
+    }
+
+    .menu-box{
+
+        display: inline-block;
+        margin: 150px 0 150px 0;
+        padding: 100px 0;
     }
 
 
@@ -317,11 +327,59 @@ body{
         font-family: 'Gulfs Display Condensed';
         display: block;
         position: relative;
-        font-size: 175px;
+        font-size: 100px;
         color: #D94D58;
-        padding: 0 300px 0px 200px;
+        padding: 0;
         margin-top: 15rem;
     
+    }
+
+    .text{
+        font-family: 'Boismend Bold' ;
+        box-sizing: border-box;
+        position: flex ;
+        font-family: 'Boismend Bold';
+        text-transform: uppercase;
+        font-size: 20px;
+        width: 100%;
+        color: #844395;
+        padding: 0;
+        justify-content: center;
+    
+    }
+
+
+
+    .parchita-container{
+        display: block;
+        height: 900px;
+        width: 100%;
+        margin: 0;
+    
+    }
+    
+    .parchita-tittle{
+        font-family: 'Gulfs Display Condensed';
+        display: block;
+        position: relative;
+        font-family: 'Gulfs Display Condensed';
+        font-size: 100px;
+        color: #FFD85A;
+        padding: 0;
+        margin-bottom: 40px ;
+    }
+
+    .text-parchita{
+        font-family: 'Boismend Bold' ;
+        box-sizing: border-box;
+        position: flex ;
+        font-family: 'Boismend Bold';
+        text-transform: uppercase;
+        font-size: 20px;
+        width: 100%;
+        color: #FFD85A;
+        padding: 0;
+        justify-content: center;
     }
     
 }
