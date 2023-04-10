@@ -10,7 +10,7 @@ const rainingLeafs = () =>{
     let size = (Math.random() * 10) + 90;
     let z = Math.round(Math.random)* 0.1;
     let delay = Math.random() * 2;
-    let anima = (Math.random() * 10) + 5;
+    let anima = (Math.random() * 10) + 10;
     let deg = Math.round(Math.random)*2;
 
     
@@ -37,14 +37,14 @@ const rainingLeafs = () =>{
 addEventListener('resize', function(){ 
     console.log(window.innerWidth);
     if(this.window.innerWidth >= 920){
-        setInterval(rainingLeafs, 1000);
+        setInterval(rainingLeafs, 1500);
     };
 });
 
 addEventListener('DOMContentLoaded', function(){ 
     console.log(window.innerWidth);
     if(this.window.innerWidth >= 920){
-        setInterval(rainingLeafs, 1000);
+        setInterval(rainingLeafs, 1500);
     };
 });
  

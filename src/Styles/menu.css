@@ -20,32 +20,8 @@
 
 }
 
-#loader-container{
-    width: 100%;
-    height: 100%;
-    position: fixed;
-    transition: all 0.5s ease;
-    z-index: 1000;
-}
-
-#loader{
-    height: 200px;
-    width: 200px;
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    margin: auto;
-    animation: spining 0.5 linear infinite;
-}
 
 
-/* Animaciones: spining */
-@keyframes spining{
-    from{ transform: rotate(0deg);}
-    to{ transform: rotate(360deg);}
-}
 
 html{
     scroll-behavior: smooth;
@@ -284,21 +260,22 @@ p>b:first-child{
     transition: 1s;
 }
 
-/* Weird Media */
+/* WEIRD MEDIA */
 
 @media (max-width: 1600px) and (min-width: 920px){
     .menu-box{
 
         display: inline-block;
-        margin: 150px 50px 150px 300px;
+        margin: 100px 50px 150px 300px;
         padding: 100px 0;
     }
+    
 
     .que-container{
         display: block;
         height: 100vh;
         width: 100%;
-        margin: 18rem auto;
+        margin: 200px auto;
     
     }
 
@@ -313,6 +290,7 @@ p>b:first-child{
         color: #844395;
         padding:  0px 400px;
         justify-content: center;
+        align-items: center;
     
     }
 
@@ -320,11 +298,198 @@ p>b:first-child{
         display: block;
         height: 900px;
         width: 100%;
-        margin: 35rem auto 55rem;
+        margin: 750px auto 750px;
     
     }
 
+    .parchita-tittle{
+        font-family: 'Gulfs Display Condensed';
+        display: block;
+        position: relative;
+        font-family: 'Gulfs Display Condensed';
+        font-size: 250px;
+        color: #FFD85A;
+        padding: 200px 0px 0 450px;
+        margin-bottom: 40px ;
+    }
+
 }
+
+
+/* TABLET QUERY */
+
+@media (max-width: 920px) and (min-width: 600px){
+
+    .container{
+        font-family: 'Gulfs Display Condensed';
+        display: flex;
+        position: relative;
+        align-items: center;
+        justify-content: center;
+        width: 100vw;
+        height: 100vh;
+
+    }
+
+    .wrapper{
+        display: block;
+        width: 100vw;
+        height: 100vh;
+        
+    }
+    
+    .menu-box{
+    
+        display: block;               
+        padding:0;
+        margin: 40px 80px 40px 80px ;
+
+    }
+    
+    .LA-text{
+        display: block;
+        color: #D94D58;
+        font-size: 350px;
+        text-shadow: -15px 0 #FFD85A, 0 15px #FFD85A, 15px 0 #FFD85A, 0 -15px #FFD85A;
+        padding: auto 40px;
+    
+    }
+    
+    
+    .container-wrapper{
+        display: block;
+        margin-top: 10px;
+        padding: 0;
+        
+    }
+    
+
+    
+    a{  
+        margin: auto;
+        text-decoration: none;
+        pointer-events:painted;   
+    }
+    
+    
+    .carousel{
+        position: relative;
+        width: 100vw;
+        max-width: 400px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center; 
+        
+    }
+    
+    .carousel-item{
+        position: absolute;
+        width: 100vw;
+        display: flex;
+        align-items: center;
+        padding: 0;
+        opacity: 0;
+        filter: drop-shadow(0 2px 2px #777777);
+        will-change: transform, opacity;
+        animation: carouselAnim 10s linear infinite;
+        margin-top: 140px; 
+    
+    }
+
+
+    .title{
+        display: block;
+        background-color: #D94D58;
+        font-size: 180px;
+        color: #FFD85A;
+        padding: 0 5px;
+    }
+
+    .que-container{
+        display: block;
+        height: 100vh;
+        width: 100%;
+        margin: 0 auto;
+    
+    }
+    
+    
+    .que-tittle{
+        font-family: 'Gulfs Display Condensed';
+        display: block;
+        position: relative;
+        font-size: 200px;
+        color: #D94D58;
+        padding: 0 100px;
+        margin-top: 0px;
+    
+    }
+    
+    .text{
+        font-family: 'Boismend Bold' ;
+        box-sizing: border-box;
+        position: flex ;
+        font-family: 'Boismend Bold';
+        text-transform: uppercase;
+        font-size: 35px;
+        width: 100%;
+        color: #844395;
+        padding:  0 60px 80px 60px;
+        justify-content: center;
+        margin: 0 auto 40px auto;
+    
+    }
+    
+    b{
+        font-size: larger;
+        font-weight: 600;
+    
+    }
+    
+    p>b:first-child{
+        color: #D94D58;
+    }
+    
+    
+    .parchita-container{
+        display: block;
+        height: 100%;
+        width: 100%;
+        margin: 10rem 0 55rem 10px;
+    
+    }
+    
+    .parchita-tittle{
+        font-family: 'Gulfs Display Condensed';
+        display: block;
+        position: relative;
+        font-family: 'Gulfs Display Condensed';
+        font-size: 180px;
+        color: #FFD85A;
+        padding:  0px 180px ;
+        margin-bottom: 40px ;
+    }
+    
+    .text-parchita{
+        font-family: 'Boismend Bold' ;
+        box-sizing: border-box;
+        position: flex ;
+        font-family: 'Boismend Bold';
+        text-transform: uppercase;
+        font-size: 40px;
+        width: 100%;
+        color: #FFD85A;
+        padding:  0 80px;
+        margin-right: 200px;
+        justify-content: center;
+    }
+
+}
+    
+
+
+
+
 
 /* Mobile Responsive */
 
@@ -335,17 +500,7 @@ p>b:first-child{
         border: 1px solid red;
     }
 
-    #loader{
-        height: 100px;
-        width: 100px;
-        position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        margin: auto;
-        animation: spining 0.5 linear infinite;
-    }
+    
 
     .menu-box{
 
