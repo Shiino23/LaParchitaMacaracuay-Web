@@ -77,14 +77,13 @@ i{
     background-size: cover;
     width: 150px;
     height: 150px; 
-    filter: drop-shadow(0 4px 4px #D94D58);
     animation: buttonResizing 0.5s ease infinite;
     transition: 1s;
 
 }
 
 .img-btn:hover{
-    background-image: url(../img/Logos/LAPARCHITA_tocame-10.png);
+    background-image: url(../img/Logos/logo-export-RGB-transparente.png);
     background-repeat: no-repeat;
     background-position: cover;
     background-attachment: fixed;
@@ -118,6 +117,17 @@ a{
 
 @media (max-width: 600px){
 
+
+    body{
+        display: flex;
+        background-image: url('../img/LA\ PARCHITA_BG_01_SEMILLAS_IPHONE.jpg') ;
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+        min-height: 100vh;
+        min-width: 100vw;
+        overflow: hidden;
+    }
 
     .logo-content{
         width: 100vw;
@@ -167,13 +177,30 @@ a{
 @media (max-width: 920px) and (min-width: 600px){
 
 
+    body{
+        display: flex;
+        background-image: url('../img/LA\ PARCHITA_BG_01_SEMILLAS_IPAD.jpg') ;
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+        min-height: 100vh;
+        min-width: 100vw;
+        overflow: hidden;
+    }
+    
+
     .logo-content{
+        display: flex;
+        position: relative;
+        align-items: center;
+        justify-content: center;
         width: 100vw;
         min-height: 90vh;
     }
 
 
     .logo-text{
+        display: block;
         width: 750px;
         margin: auto;
 
@@ -191,6 +218,7 @@ a{
     }
 
     .img-btn{
+        display: block;
         height: 175px;
         width: 175px;
         margin: 50px auto;
