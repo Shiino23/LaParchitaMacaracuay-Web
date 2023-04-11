@@ -14,7 +14,7 @@
 
 body{
     display: flex;
-    background-image: url('../img/LAPARCHITA_HOME_BG_01.jpg') ;
+    background-image: url('../img/home\ site\ fondo.png') ;
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -68,7 +68,7 @@ i{
 
 .logo-text{ 
     display: block !important;
-    width: 1000px;
+    width: 1500px;
 }
 
 .img-btn{
@@ -115,7 +115,17 @@ a{
 
 /* RESPONSIVE MOBILE */
 
-@media (max-width: 600px){
+/* mobile-portrait: min:320px - max:479px; */
+
+@media screen (min-width: 320px) and (max-width: 479px) {
+    
+}
+
+
+/* mobile-landscape: min:480px - max:599px; */
+
+
+@media screen (min-width: 480px) and (max-width: 599px){
 
 
     body{

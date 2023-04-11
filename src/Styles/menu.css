@@ -208,7 +208,7 @@ a{
     font-size: 40px;
     width: 100%;
     color: #844395;
-    padding:  0px 600px;
+    padding:  100px 400px;
     justify-content: center;
 
 }
@@ -260,15 +260,21 @@ p>b:first-child{
     transition: 1s;
 }
 
+
+
 /* WEIRD MEDIA */
 
-@media (max-width: 1600px) and (min-width: 920px){
+
+
+/* tablet-portrait: min:768px - max:1023px; */
+
+@media (max-width: 1200px) and (min-width: 768px){
 
 
     .menu-box{
 
         display: inline-block;
-        margin: 100px 50px 150px 300px;
+        margin: 100px 20px 150px 5px;
         padding: 100px 0;
     }
     
@@ -277,7 +283,18 @@ p>b:first-child{
         display: block;
         height: 100vh;
         width: 100%;
-        margin: 200px auto;
+        margin: 200px 0 0 0;
+    
+    }
+
+    .que-tittle{
+        font-family: 'Gulfs Display Condensed';
+        display: block;
+        position: relative;
+        font-size: 200px;
+        color: #D94D58;
+        padding: 0 300px 0px 100px;
+        margin-top: 15rem;
     
     }
 
@@ -290,7 +307,7 @@ p>b:first-child{
         font-size: 40px;
         width: 100%;
         color: #844395;
-        padding:  0px 400px;
+        padding:  0px 100px;
         justify-content: center;
         align-items: center;
     
@@ -300,7 +317,7 @@ p>b:first-child{
         display: block;
         height: 900px;
         width: 100%;
-        margin: 750px auto 750px;
+        margin: 750px 0 750px 0;
     
     }
 
@@ -309,10 +326,23 @@ p>b:first-child{
         display: block;
         position: relative;
         font-family: 'Gulfs Display Condensed';
-        font-size: 250px;
+        font-size: 200px;
         color: #FFD85A;
-        padding: 200px 0px 0 450px;
-        margin-bottom: 40px ;
+        padding: 0 0 0 200px;
+        margin-bottom: 20px ;
+    }
+
+    .text-parchita{
+        font-family: 'Boismend Bold' ;
+        box-sizing: border-box;
+        position: flex ;
+        font-family: 'Boismend Bold';
+        text-transform: uppercase;
+        font-size: 40px;
+        width: 100%;
+        color: #FFD85A;
+        padding: 0 80px 0 250px ;
+        justify-content: center;
     }
 
 }
@@ -320,7 +350,9 @@ p>b:first-child{
 
 /* TABLET QUERY */
 
-@media (max-width: 920px) and (min-width: 600px){
+/* small-tablet-landscape: max:800px - min:767px */
+
+@media (max-width: 800px) and (min-width: 600px){
 
     body{
         background-image: url('../img/LA\ PARCHITA_BG_01_LANDING_IPAD-01.jpg');
@@ -359,9 +391,9 @@ p>b:first-child{
     .LA-text{
         display: block;
         color: #D94D58;
-        font-size: 350px;
+        font-size: 300px;
         text-shadow: -15px 0 #FFD85A, 0 15px #FFD85A, 15px 0 #FFD85A, 0 -15px #FFD85A;
-        padding: auto 0;
+        padding: ;
     
     }
     
@@ -412,7 +444,7 @@ p>b:first-child{
         background-color: #D94D58;
         font-size: 180px;
         color: #FFD85A;
-        padding: 0 2px;
+        padding: 0 10px;
     }
 
     .que-container{
@@ -428,9 +460,9 @@ p>b:first-child{
         font-family: 'Gulfs Display Condensed';
         display: block;
         position: relative;
-        font-size: 200px;
+        font-size: 150px;
         color: #D94D58;
-        padding: 0 100px;
+        padding: 0 0 0 100px;
         margin-top: 0px;
     
     }
@@ -441,7 +473,7 @@ p>b:first-child{
         position: flex ;
         font-family: 'Boismend Bold';
         text-transform: uppercase;
-        font-size: 35px;
+        font-size: 30px;
         width: 100%;
         color: #844395;
         padding:  0 60px 80px 60px;
@@ -450,22 +482,12 @@ p>b:first-child{
     
     }
     
-    b{
-        font-size: larger;
-        font-weight: 600;
-    
-    }
-    
-    p>b:first-child{
-        color: #D94D58;
-    }
-    
     
     .parchita-container{
         display: block;
         height: 100%;
         width: 100%;
-        margin: 10rem 0 55rem 10px;
+        margin: 16rem 0 45rem 10px;
     
     }
     
@@ -474,10 +496,10 @@ p>b:first-child{
         display: block;
         position: relative;
         font-family: 'Gulfs Display Condensed';
-        font-size: 200px;
+        font-size: 150px;
         color: #FFD85A;
-        padding:  0px;
-        margin-bottom: 40px ;
+        padding: 0 0 0 200px;
+        margin-bottom: 20px ;
     }
     
     .text-parchita{
@@ -486,7 +508,7 @@ p>b:first-child{
         position: flex ;
         font-family: 'Boismend Bold';
         text-transform: uppercase;
-        font-size: 35px;
+        font-size: 30px;
         width: 100%;
         color: #FFD85A;
         padding:  0 20px 0 110px;
@@ -494,19 +516,178 @@ p>b:first-child{
     }
 
 }
+
+
+/* small-tablet-portrait: min:600px - max:799px; */
+    
+@media screen (min-width: 600px) and (max-width: 799px) {
+
+    .container{
+        font-family: 'Gulfs Display Condensed';
+        display: flex;
+        position: relative;
+        align-items: center;
+        justify-content: center;
+        width: 100vw;
+        height: 100vh;
+
+    }
+
+    .wrapper{
+        display: block;
+        width: 100vw;
+        height: 100vh;
+        
+    }
+    
+    .menu-box{
+    
+        display: block;               
+        padding:0;
+        margin: 40px 80px 40px 80px ;
+
+    }
+    
+    .LA-text{
+        display: block;
+        color: #D94D58;
+        font-size: 125px;
+        text-shadow: -15px 0 #FFD85A, 0 15px #FFD85A, 15px 0 #FFD85A, 0 -15px #FFD85A;
+    
+    }
+    
+    
+    .container-wrapper{
+        display: block;
+        margin-top: 10px;
+        padding: 0;
+        
+    }
     
 
+    
+    a{  
+        margin: auto;
+        text-decoration: none;
+        pointer-events:painted;   
+    }
+    
+    
+    .carousel{
+        position: relative;
+        width: 100vw;
+        max-width: 400px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center; 
+        
+    }
+    
+    .carousel-item{
+        position: absolute;
+        width: 100vw;
+        display: flex;
+        align-items: center;
+        padding: 0;
+        opacity: 0;
+        filter: drop-shadow(0 2px 2px #777777);
+        will-change: transform, opacity;
+        animation: carouselAnim 10s linear infinite;
+        margin-top: 140px; 
+    
+    }
+
+
+    .title{
+        display: block;
+        background-color: #D94D58;
+        font-size: 110px;
+        color: #FFD85A;
+        padding: 0 10px;
+    }
+
+    .que-container{
+        display: block;
+        height: 100vh;
+        width: 100%;
+        margin: 0 auto;
+    
+    }
+    
+    
+    .que-tittle{
+        font-family: 'Gulfs Display Condensed';
+        display: block;
+        position: relative;
+        font-size: 80px;
+        color: #D94D58;
+        padding: 0 0 0 100px;
+        margin-top: 0;
+    
+    }
+    
+    .text{
+        font-family: 'Boismend Bold' ;
+        box-sizing: border-box;
+        position: flex ;
+        font-family: 'Boismend Bold';
+        text-transform: uppercase;
+        font-size: 25px;
+        width: 100%;
+        color: #844395;
+        padding:  0 40px 80px 60px;
+        justify-content: center;
+        margin: 0 auto 40px auto;
+    
+    }
+    
+    
+    .parchita-container{
+        display: block;
+        height: 100%;
+        width: 100%;
+        margin: 16rem 0 45rem 0;
+    
+    }
+    
+    .parchita-tittle{
+        font-family: 'Gulfs Display Condensed';
+        display: block;
+        position: relative;
+        font-family: 'Gulfs Display Condensed';
+        font-size: 80px;
+        color: #FFD85A;
+        padding: 0 0 0 0;
+        margin-bottom: 5px ;
+    }
+    
+    .text-parchita{
+        font-family: 'Boismend Bold' ;
+        box-sizing: border-box;
+        position: flex ;
+        font-family: 'Boismend Bold';
+        text-transform: uppercase;
+        font-size: 25px;
+        width: 100%;
+        color: #FFD85A;
+        padding:  0 20px 0 110px;
+        justify-content: center;
+    }
+    
+}
 
 
 
 
-/* Mobile Responsive */
+/* MOBILE RESPONSIVE */
+
+/* mobile-landscape: min:480px - max:599px; */
 
 
-@media (max-width: 600px){
+@media (max-width: 599px) and (min-width: 480px){
 
     body{
-        background-image: url(../img/LA\ PARCHITA_BG_01_LANDING_IPHONE-01.jpg);
+        background-image: url(../img/LA\ PARCHITA_BG_01_LANDING_IPAD-01.jpg);
         background-attachment: scroll;
         background-repeat: no-repeat;
         background-size: cover;
@@ -517,53 +698,132 @@ p>b:first-child{
 
     
 
-    .menu-box{
+    .container{
+        font-family: 'Gulfs Display Condensed';
+        display: flex;
+        position: relative;
+        align-items: center;
+        justify-content: center;
+        width: 100vw;
+        height: 100vh;
 
-        display: inline-block;
-        margin: 150px 0 150px 0;
-        padding: 100px 0;
     }
 
+    .wrapper{
+        display: block;
+        width: 100vw;
+        height: 100vh;
+        
+    }
+    
+    .menu-box{
+    
+        display: block;               
+        padding:0;
+        margin: 80px 80px 0 80px ;
+
+    }
+    
+    .LA-text{
+        display: block;
+        color: #D94D58;
+        font-size: 175px;
+        text-shadow: -15px 0 #FFD85A, 0 15px #FFD85A, 15px 0 #FFD85A, 0 -15px #FFD85A;
+    
+    }
+    
+    
+    .container-wrapper{
+        display: block;
+        margin-top: 10px;
+        padding: 0;
+        
+    }
+    
+
+    
+    a{  
+        margin: auto;
+        text-decoration: none;
+        pointer-events:painted;   
+    }
+    
+    
+    .carousel{
+        position: relative;
+        width: 100vw;
+        max-width: 400px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center; 
+        
+    }
+    
+    .carousel-item{
+        position: absolute;
+        width: 100vw;
+        display: flex;
+        align-items: center;
+        padding: 0;
+        opacity: 0;
+        filter: drop-shadow(0 2px 2px #777777);
+        will-change: transform, opacity;
+        animation: carouselAnim 10s linear infinite;
+        margin-top: 200px; 
+    
+    }
+
+
+    .title{
+        display: block;
+        background-color: #D94D58;
+        font-size: 125px;
+        color: #FFD85A;
+        padding: 0 10px;
+        margin: 8rem auto;
+    }
 
     .que-container{
         display: block;
         height: 100vh;
         width: 100vw;
-          
+        margin: 0 auto 4rem;
+    
     }
-
+    
+    
     .que-tittle{
         font-family: 'Gulfs Display Condensed';
         display: block;
         position: relative;
         font-size: 100px;
         color: #D94D58;
-        padding: 0;
-        margin-top: 15rem;
+        padding: 0 0 0 100px;
+        margin-top: 0;
     
     }
-
+    
     .text{
         font-family: 'Boismend Bold' ;
         box-sizing: border-box;
         position: flex ;
         font-family: 'Boismend Bold';
         text-transform: uppercase;
-        font-size: 20px;
+        font-size: 25px;
         width: 100%;
         color: #844395;
-        padding: 0;
+        padding:  0 40px 80px 40px;
         justify-content: center;
+        margin: 0 auto 100px auto;
     
     }
-
-
-
+    
+    
     .parchita-container{
         display: block;
-        height: 100%;
-        width: 100%;
-        margin: 0;
+        height: 100vh;
+        width: 100vw;
+        margin: 10rem 0 10rem 0;
     
     }
     
@@ -572,27 +832,198 @@ p>b:first-child{
         display: block;
         position: relative;
         font-family: 'Gulfs Display Condensed';
-        font-size: 100px;
+        font-size: 80px;
         color: #FFD85A;
-        padding: 0;
-        margin-bottom: 40px ;
+        padding: 0 0 0 150px;
+        margin-bottom: 5px ;
     }
-
+    
     .text-parchita{
         font-family: 'Boismend Bold' ;
         box-sizing: border-box;
         position: flex ;
         font-family: 'Boismend Bold';
         text-transform: uppercase;
-        font-size: 20px;
+        font-size: 25px;
         width: 100%;
         color: #FFD85A;
-        padding: 0;
+        padding:  0 20px 0 110px;
         justify-content: center;
     }
     
 }
 
+
+/* mobile-portrait: min:320px - max:479px; */
+
+@media screen (min-width: 320px) and (max-width: 479px) {
+
+    body{
+        background-image: url(../img/LA\ PARCHITA_BG_01_LANDING_IPAD-01.jpg);
+        background-attachment: scroll;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 100%;
+        width: 100%;
+    
+    }
+
+    
+
+    .container{
+        font-family: 'Gulfs Display Condensed';
+        display: flex;
+        position: relative;
+        align-items: center;
+        justify-content: center;
+        width: 100vw;
+        height: 100vh;
+
+    }
+
+    .wrapper{
+        display: block;
+        width: 100vw;
+        height: 100vh;
+        
+    }
+    
+    .menu-box{
+    
+        display: block;               
+        padding:0;
+        margin: 80px 0 0 0 ;
+
+    }
+    
+    .LA-text{
+        display: block;
+        color: #D94D58;
+        font-size: 100px;
+        text-shadow: -15px 0 #FFD85A, 0 15px #FFD85A, 15px 0 #FFD85A, 0 -15px #FFD85A;
+    
+    }
+    
+    
+    .container-wrapper{
+        display: block;
+        margin-top: 10px;
+        padding: 0;
+        
+    }
+    
+
+    
+    a{  
+        margin: auto;
+        text-decoration: none;
+        pointer-events:painted;   
+    }
+    
+    
+    .carousel{
+        position: relative;
+        width: 100vw;
+        max-width: 400px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center; 
+        
+    }
+    
+    .carousel-item{
+        position: absolute;
+        width: 100vw;
+        display: flex;
+        align-items: center;
+        padding: 0;
+        opacity: 0;
+        filter: drop-shadow(0 2px 2px #777777);
+        will-change: transform, opacity;
+        animation: carouselAnim 10s linear infinite;
+        margin-top: 200px; 
+    
+    }
+
+
+    .title{
+        display: block;
+        background-color: #D94D58;
+        font-size: 125px;
+        color: #FFD85A;
+        padding: 0 10px;
+        margin: 8rem auto;
+    }
+
+    .que-container{
+        display: block;
+        height: 100vh;
+        width: 100vw;
+        margin: 0 auto 4rem;
+    
+    }
+    
+    
+    .que-tittle{
+        font-family: 'Gulfs Display Condensed';
+        display: block;
+        position: relative;
+        font-size: 100px;
+        color: #D94D58;
+        padding: 0 0 0 100px;
+        margin-top: 0;
+    
+    }
+    
+    .text{
+        font-family: 'Boismend Bold' ;
+        box-sizing: border-box;
+        position: flex ;
+        font-family: 'Boismend Bold';
+        text-transform: uppercase;
+        font-size: 25px;
+        width: 100%;
+        color: #844395;
+        padding:  0 40px 80px 40px;
+        justify-content: center;
+        margin: 0 auto 100px auto;
+    
+    }
+    
+    
+    .parchita-container{
+        display: block;
+        height: 100vh;
+        width: 100vw;
+        margin: 10rem 0 10rem 0;
+    
+    }
+    
+    .parchita-tittle{
+        font-family: 'Gulfs Display Condensed';
+        display: block;
+        position: relative;
+        font-family: 'Gulfs Display Condensed';
+        font-size: 80px;
+        color: #FFD85A;
+        padding: 0 0 0 150px;
+        margin-bottom: 5px ;
+    }
+    
+    .text-parchita{
+        font-family: 'Boismend Bold' ;
+        box-sizing: border-box;
+        position: flex ;
+        font-family: 'Boismend Bold';
+        text-transform: uppercase;
+        font-size: 25px;
+        width: 100%;
+        color: #FFD85A;
+        padding:  0 20px 0 110px;
+        justify-content: center;
+    }
+    
+}
 
 
 
